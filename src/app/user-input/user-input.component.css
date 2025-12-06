@@ -3,7 +3,7 @@ form {
     max-width: 40rem;
     margin: 2rem auto;
     border-radius: 4px;
-    background: linear-gradient(180deg,#074e00);
+    background: linear-gradient(180deg,#85da7d);
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.35);
 }
 
@@ -21,13 +21,14 @@ label {
     margin-bottom: 0.25rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
+    color: #000;
 }
 
 input {
     font: inherit;
     padding: 1rem;
     border-radius: 0.25rem;
-    border: 1px solid #025981;
+    border: 1px solid #38a30e;
     width: 100%;
 }
 
@@ -36,10 +37,15 @@ button {
     padding: 1rem 2rem;
     border-radius: 0.25rem;
     border: none;
-    background-color: #0284c7;
+    background-color: #0eada0;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     margin-top: 1rem;
+    width: 100%;
+
+    &:hover {
+        background-color: #0b7c78;
+    }
 }
