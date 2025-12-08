@@ -1,4 +1,4 @@
-@if (!(results() ?? []).length) {
+@if (!results() || results().length === 0) {
 <p class="center">please enter some values and press the button to calculate the investment result.</p>
 }
 @else {
@@ -20,7 +20,6 @@
       <td>{{ result.intrest | currency:'USD':true }}</td>
       <td>{{ result.totalIntrest | currency:'USD':true }}</td>
       <td>{{ result.totalAmountInvested | currency:'USD':true }}</td>
-    </tr>
     }
   </tbody>
 </table>
